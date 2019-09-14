@@ -1,0 +1,61 @@
+{
+  "usuarios": [
+    {
+      "id": 0
+    },
+    {
+      "ativo": true,
+      "nome": "zeus",
+      "email": "zeus@gmail.com",
+      "pws": "dayanne",
+      "id": 2
+    },
+    {
+      "ativo": true,
+      "nome": "dia",
+      "email": "diadecorno@gmail.com",
+      "pws": "jessica",
+      "id": 3
+    },
+    {
+      "ativo": true,
+      "nome": "day",
+      "email": "zeus@gmail.com",
+      "pws": "12345678",
+      "id": 4
+    }
+  ],
+  "eventos": [
+    {
+      "id": 0
+    },
+    {
+      "ativo": true,
+      "id": 1
+    },
+    {
+      "ativo": true,
+      "id": 2
+    },
+    {
+      "ativo": true,
+      "id": 3
+    },
+    {
+      "ativo": true,
+      "id": 4
+    },
+    {
+      "ativo": true,
+      "id": 5
+    },
+    {
+      "ativo": true,
+      "id": 6
+    },
+    {
+      "ativo": true,
+      "id": 7
+    }
+  ]
+}

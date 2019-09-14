@@ -1,0 +1,17 @@
+<section class="container">
+<table class="table" *ngIf="eventos | async as users">
+    <tr>
+        <th>NOME</th>
+        <th>TEMA</th>
+        <th>DATA</th>
+        <th>HORARIO</th>
+    </tr>
+
+    <tr *ngFor="let user of users">
+        <td>{{user.nome}}</td>
+        <td>{{user.tema}}</td>
+        <td>{{user.data}}</td>
+        <td>{{user.horario}}</td>
+    </tr>
+    </table>
+</section>
