@@ -23,6 +23,27 @@
       "email": "zeus@gmail.com",
       "pws": "12345678",
       "id": 4
+    },
+    {
+      "ativo": true,
+      "nome": "day",
+      "email": "zeus@gmail.com",
+      "pws": "dayanne",
+      "id": 5
+    },
+    {
+      "ativo": true,
+      "nome": "day",
+      "email": "zeus@gmail.com",
+      "pws": "dayanne",
+      "id": 6
+    },
+    {
+      "ativo": true,
+      "nome": "day",
+      "email": "zeus@gmail.com",
+      "pws": "dayanne",
+      "id": 7
     }
   ],
   "eventos": [
@@ -31,31 +52,11 @@
     },
     {
       "ativo": true,
+      "nome": "day",
+      "tema": "festa",
+      "data": "2019-09-20",
+      "horario": "05:59",
       "id": 1
-    },
-    {
-      "ativo": true,
-      "id": 2
-    },
-    {
-      "ativo": true,
-      "id": 3
-    },
-    {
-      "ativo": true,
-      "id": 4
-    },
-    {
-      "ativo": true,
-      "id": 5
-    },
-    {
-      "ativo": true,
-      "id": 6
-    },
-    {
-      "ativo": true,
-      "id": 7
     }
   ]
 }

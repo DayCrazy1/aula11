@@ -9,12 +9,13 @@ import { EventoService } from '../../services/evento.service';
 export class ListEventoComponent implements OnInit {
 
  protected eventos:any;
+
   constructor(
     protected eventoService:EventoService
   ) { }
 
   ngOnInit() {
-  this.eventos = this.eventoService.getAll();
+    this.eventos = this.eventoService.getAll();
   }
 
 }

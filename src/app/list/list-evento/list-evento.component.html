@@ -1,17 +1,17 @@
 <section class="container">
-<table class="table" *ngIf="eventos | async as users">
-    <tr>
-        <th>NOME</th>
-        <th>TEMA</th>
-        <th>DATA</th>
-        <th>HORARIO</th>
-    </tr>
-
-    <tr *ngFor="let user of users">
-        <td>{{user.nome}}</td>
-        <td>{{user.tema}}</td>
-        <td>{{user.data}}</td>
-        <td>{{user.horario}}</td>
-    </tr>
-    </table>
+    <div class="row" *ngIf="eventos | async as users">
+        <div *ngFor="let user of users">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body m-2">
+                    <h5 class="card-text">TEMA: {{user.tema}}</h5>
+                    <p class="card-text">NOME: {{user.nome}}</p>
+                    <p class="card-title">DATA: {{user.data}}</p>
+                    <p class="card-text">HORARIO: {{user.horario}}</p>
+                    
+                    
+                    <a href="#" class="btn btn-primary">ACEITO</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
