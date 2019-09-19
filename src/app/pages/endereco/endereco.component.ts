@@ -22,7 +22,12 @@ export class EnderecoComponent implements OnInit {
     if(this.cep.length  >7){
     this.enderecoService.getEndereco(this.cep).subscribe(
       res=> {
+        if (res.erro){
+          alert("CEP não econtrado!")
+        }else{
         console.log(res);
+        this.endereco = res
+        }
       }
     )
   }
