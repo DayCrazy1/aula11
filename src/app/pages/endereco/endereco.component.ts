@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { EnderecoService } from '../../services/endereco.service';
 import { Endereco } from '../../model/endereco';
 
@@ -9,7 +9,8 @@ import { Endereco } from '../../model/endereco';
 })
 export class EnderecoComponent implements OnInit {
 
-  protected endereco:Endereco = new Endereco;
+  @Input() protected endereco:Endereco = new Endereco;
+
   constructor(
     protected enderecoService: EnderecoService
   ) { }
