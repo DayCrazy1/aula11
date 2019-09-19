@@ -9,7 +9,7 @@ import { Endereco } from '../../model/endereco';
 })
 export class EnderecoComponent implements OnInit {
 
-  protected enderco:Endereco = new Endereco;
+  protected endereco:Endereco = new Endereco;
   constructor(
     protected enderecoService: EnderecoService
   ) { }
