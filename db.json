@@ -5,45 +5,29 @@
     },
     {
       "ativo": true,
-      "nome": "zeus",
+      "endereco": {
+        "erro": false,
+        "logradouro": "Rua Hannibal Porto",
+        "localidade": "Rio de Janeiro",
+        "uf": "RJ"
+      },
+      "nome": "day",
       "email": "zeus@gmail.com",
-      "pws": "dayanne",
+      "pws": "seiladay",
+      "id": 1
+    },
+    {
+      "ativo": true,
+      "endereco": {
+        "erro": false,
+        "logradouro": "Rua Hannibal Porto",
+        "localidade": "Rio de Janeiro",
+        "uf": "RJ"
+      },
+      "nome": "day",
+      "email": "zeus@gmail.com",
+      "pws": "seiladay",
       "id": 2
-    },
-    {
-      "ativo": true,
-      "nome": "dia",
-      "email": "diadecorno@gmail.com",
-      "pws": "jessica",
-      "id": 3
-    },
-    {
-      "ativo": true,
-      "nome": "day",
-      "email": "zeus@gmail.com",
-      "pws": "12345678",
-      "id": 4
-    },
-    {
-      "ativo": true,
-      "nome": "day",
-      "email": "zeus@gmail.com",
-      "pws": "dayanne",
-      "id": 5
-    },
-    {
-      "ativo": true,
-      "nome": "day",
-      "email": "zeus@gmail.com",
-      "pws": "dayanne",
-      "id": 6
-    },
-    {
-      "ativo": true,
-      "nome": "day",
-      "email": "zeus@gmail.com",
-      "pws": "dayanne",
-      "id": 7
     }
   ],
   "eventos": [
