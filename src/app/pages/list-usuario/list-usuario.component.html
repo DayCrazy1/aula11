@@ -4,12 +4,21 @@
             <th>ID</th>
             <th>Nome</th>
             <th>E-mail</th>
+            <th>CEP</th>
+            <th>Endereco</th>
+            <th>Numero</th>
+            <th>/</th>
+            <th>X</th>
         </tr>
         <tr *ngFor="let user of users">
             <td>{{user.id}}</td>
             <td>{{user.nome}}</td>
             <td>{{user.email}}</td>
+            <td>{{user.endereco.cep}}</td>
+            <td>{{user.endereco.logradouro}}</td>
+            <td>{{user.endereco.numero}}</td>
+            <td routerLink="/addusuario/{{user.id}}">/</td>
+            <td (click)="apagar(user)"></td>
         </tr>
     </table>
- 
 </section>

@@ -13,7 +13,7 @@
 
     <app-endereco [endereco] = usuario.endereco></app-endereco>
 
-    
+    <div *ngIf="!id">
 
         <div class="form-group">
             <label for=""></label>
@@ -27,10 +27,16 @@
             <small class="form-text text-danger" *ngIf="(pws.value != conf.value) && conf.dirty"> Senhas diferentes</small>
         </div>
 
-        <div class="form-group text-right">
+        <div class="form-group text-right"  >
             <button type="submit" class="btn btn-primary ml-2" [disabled]="fc.invalid || pws.value != conf.value">Salvar</button>
             <button type="reset" class="btn btn-primary ml-2">Cancelar</button>
         </div>
+    </div>
+
+    <div class="form-group text-right"  >
+        <button type="submit" class="btn btn-primary ml-2" [disabled]="fc.invalid">Atualizar</button>
+        <button type="reset" class="btn btn-primary ml-2"[routerLink]="['\addUsuario']">Cancelar</button>
+    </div>
     </form>
 </section>
 <app-list-usuario></app-list-usuario>

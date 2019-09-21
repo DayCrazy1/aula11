@@ -17,5 +17,13 @@ export class ListUsuarioComponent implements OnInit {
   ngOnInit() {
     this.usuarios = this.usuarioService.getAll();
   }
-
+  apagar(usuario){
+    if(confirm("Apagar os dados do usuario: " + usuario.nome + "?")){
+      this.usuarioService.delete(usuario.id).subscribe(
+        res =>{
+          alert("Usuario apagado!");
+        }
+      )
+    }
+  }
 }
