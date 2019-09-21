@@ -28,6 +28,19 @@
       "email": "zeus@gmail.com",
       "pws": "seiladay",
       "id": 2
+    },
+    {
+      "ativo": true,
+      "endereco": {
+        "erro": false,
+        "logradouro": "Rua Hannibal Porto",
+        "localidade": "Rio de Janeiro",
+        "uf": "RJ"
+      },
+      "nome": "day",
+      "email": "zeus@gmail.com",
+      "pws": "dayanne",
+      "id": 3
     }
   ],
   "eventos": [

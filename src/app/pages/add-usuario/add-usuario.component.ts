@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Usuario } from 'src/app/model/usuario';
 import { UsuarioService } from 'src/app/services/usuario.service';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-add-usuario',
@@ -11,33 +11,47 @@ import { Router } from '@angular/router';
 export class AddUsuarioComponent implements OnInit {
 
   protected usuario:Usuario = new Usuario;
+  protected id:string = null;
 
   constructor(
     protected usuarioService: UsuarioService,
-    private router:Router
+    private router:Router,
+    protected ativeRouter:ActivatedRoute
   ) { }
 
   ngOnInit() {
+    this.id = this.ativeRouter.snapshot.paramMap.get("id");
+    if (this.id){
+      this.usuarioService.get(this.id).subscribe(
+        res=>{
+          this.usuario = res;
+        },
+        erro => this.id = null
+      )
+    }
   }
 
   onsubmit(form){
     console.log(this.usuario);
-    this.usuarioService.save(this.usuario)
-    .subscribe(
-      res=>{
-        //console.log("Cadastrado!", res);
-        alert("Cadastrado!");
-        this.router.navigate(['add-usuario']);
-      },
-      xuxu=>{
-       // console.log("Não cadastrado!",xuxu);
-        alert("Não cadastrado!");
-      }
-    )
+    if (this.id){
+    }
+    else{
+      this.usuarioService.update(this.usuario, this.id)
+      .subscribe(
+        res=>{
+          //console.log("Cadastrado!", res);
+          alert("Atualizado!");
+          this.router.navigateByUrl('/',{ skipLocationChange: true})
+          .then(() =>
+          this.router.navigate(['add-usuario']));
+          //this.router.navigate(["addusuario"])
+        },
+        xuxu=>{
+         console.log("Não Atualizado!",xuxu);
+          alert("Não Atualizado!");
+        }
+      )
+    }
+
   }
-
-
-protected cep: string;
-
-
 }
